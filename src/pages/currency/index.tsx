@@ -8,7 +8,7 @@ interface Props {
 const CurrencyPage = ({ data }: Props) => {
   return (
     <div>
-      <h1>Currencies</h1>
+      <h1>Currencies of the world</h1>
       {data?.map((currency, index) => {
         return (
           <li key={index}>
