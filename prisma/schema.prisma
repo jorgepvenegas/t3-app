@@ -79,3 +79,11 @@ model Guestbook {
   name        String
   message     String    @db.VarChar(100)
 }
+
+model Currency {
+  id          String    @id @default(cuid())
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime @updatedAt
+  shortName   String
+  name        String
+}
