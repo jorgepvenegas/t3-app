@@ -23,7 +23,7 @@ const CurrencyPage = ({ data }: Props) => {
 export const getServerSideProps: GetServerSideProps<{
   data: Props;
 }> = async () => {
-  const res = await fetch(`${process.env.HOST}/api/currency`);
+  const res = await fetch(`${process.env.BASE_PATH}/api/currency`);
   const data: Props = await res.json();
   return {
     props: {
